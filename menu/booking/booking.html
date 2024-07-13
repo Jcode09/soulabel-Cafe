@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soulabel Café</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            background-color: #7a3d00;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header h1 a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .header h1 a:hover {
+            color: #e67e22;
+        }
+
+        .main {
+    padding: 2em;
+    flex: 1;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease; /* Animation for scaling and opacity */
+}
+
+.main.loaded {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+        .booking-section {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: justify; /* Center text and elements inside */
+            margin-bottom: 120px; /* Adjust according to the height of your footer */
+        }
+
+        .form-group {
+            margin-bottom: 1em;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 1em; /* Add space below the button */
+        }
+
+        .submit-button:hover {
+            background-color: #d35400;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #7a3d00;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Image styling */
+        .booking-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1em; /* Add spacing above the image */
+            border-radius: 10px; /* Optional: add border radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add box shadow */
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1><a href="../../index.html">soulabel Café</a></h1>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <section class="booking-section">
+            <h2>Book A Table</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit Booking</button>
+            </form>
+            <img src="../../images/coffee-shop-floor-plan.png" alt="Image Description">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 | soulabel Café. All rights reserved.</p>
+    </footer>
+
+    <script>
+    // Add loaded class to main content to trigger animation
+    window.onload = function() {
+        var mainContent = document.getElementById('main-content');
+        mainContent.classList.add('loaded');
+    };
+
+    </script>
+</body>
+</html>

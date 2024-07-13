@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Snacks Menu</title>
+    <link rel="stylesheet" href="menu2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-9iG2R4A2wBP1M2KlHbSogf6P4c3z4Ccs0o7TSPCm0ZoQq9l7tn0y8m9ujYxGVkwh17zzyA3bOj+HEgN8t4Hbbg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="site-container"></div>
+    <header class="header">
+        <div class="header-content">
+            <h1><a href="../../index.html#service">MENU</a></h1>
+            <nav class="sub-header">
+                <ul>
+                    <li><a href="../menu1/menu1.html">Beverages</a></li>
+                    <li><a href="../menu2/menu2.html">Foods</a></li>
+                    <li><a href="../menu3/menu3.html">Desserts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 
+    <header class="header">
+        <h1><a href="../../index.html#service">MENU</a></h1>
+    </header> 
+-->
+    
+        <!-- <div id="cart-icon" class="cart-icon">
+            <img src="../../images/cart.png" alt="Cart Icon">
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+-->
+
+    <main class="main">
+        <section class="menu-section">
+            <h2>Food Menu</h2>
+            <div class="menu-item" data-name="Chicken Katsu" data-description="Chicken katsu is Japanese-style fried chicken. This is my family recipe and can also be used to make tonkatsu by using pork cutlets instead of chicken. Serve with white rice and tonkatsu sauce." data-price="P120.00">
+                <img src="../../images/chickatsu.png" alt="Chicken Katsu">
+                <div class="menu-item-details">
+                    <h3>Chicken Katsu</h3>
+                    <p>Chicken katsu is Japanese-style fried chicken. This is my family recipe and can also be used to make tonkatsu by using pork cutlets instead of chicken. Serve with white rice and tonkatsu sauce.</p>
+                    <p class="price">P120.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+            <div class="menu-item" data-name="Glazed Pork Belly With Ginger Barbecue Sauce" data-description="Pork belly is fatty and rich, so smothering it in a sweet, tangy glaze is the perfect way to balance out the flavors and textures. This sauce recipe relies on ginger, garlic, red pepper flakes and mustard powder to create a bold, complex flavor that’s the perfect topping for the tender pork belly." data-price="P120.00">
+                <img src="../../images/porkbelly.png" alt="Glazed Pork Belly With Ginger Barbecue Sauce">
+                <div class="menu-item-details">
+                    <h3>Glazed Pork Belly With Ginger Barbecue Sauce</h3>
+                    <p>Pork belly is fatty and rich, so smothering it in a sweet, tangy glaze is the perfect way to balance out the flavors and textures. This sauce recipe relies on ginger, garlic, red pepper flakes and mustard powder to create a bold, complex flavor that’s the perfect topping for the tender pork belly.</p>
+                    <p class="price">P120.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+            <div class="menu-item" data-name="Steak and Eggs" data-description="Steak and eggs is a dish of beefsteak and fried eggs in American cuisine. It is most typically served as a breakfast or brunch food." data-price="P1,200.00">
+                <img src="../../images/steak.png" alt="Steak and Eggs">
+                <div class="menu-item-details">
+                    <h3>Steak and Eggs</h3>
+                    <p>Steak and eggs is a dish of beefsteak and fried eggs in American cuisine. It is most typically served as a breakfast or brunch food.</p>
+                    <p class="price">P1,200.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+            <div class="menu-item" data-name="Fried Chicken with Mushroom Sauce" data-description="Juicy Fried Chicken with creamy mushroom sauce in this recipe is an excellent sauce for chicken breast, adding richness to what is an otherwise very lean meat." data-price="P120.00">
+                <img src="../../images/chicken.png" alt="Fried Chicken with Mushroom Sauce">
+                <div class="menu-item-details">
+                    <h3>Fried Chicken with Mushroom Sauce</h3>
+                    <p>Juicy Fried Chicken with creamy mushroom sauce in this recipe is an excellent sauce for chicken breast, adding richness to what is an otherwise very lean meat.</p>
+                    <p class="price">P120.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="main">
+        <section class="menu-section">
+            <h2>Snacks Menu</h2>
+            <div class="menu-item" data-name="Clubhouse Sandwich" data-description="A Clubhouse sandwich, also called a clubhouse sandwich, is a sandwich consisting of bread, sliced cooked poultry, fried bacon, lettuce, tomato, and mayonnaise. It is often cut into quarters or halves and held together by cocktail sticks." data-price="P120.00">
+                <img src="../../images/sandwich.png" alt="Clubhouse Sandwich">
+                <div class="menu-item-details">
+                    <h3>Clubhouse Sandwich</h3>
+                    <p>A Clubhouse sandwich, also called a clubhouse sandwich, is a sandwich consisting of bread, sliced cooked poultry, fried bacon, lettuce, tomato, and mayonnaise. It is often cut into quarters or halves and held together by cocktail sticks.</p>
+                    <p class="price">P120.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+            <div class="menu-item" data-name="Pizza" data-description="Pizza is a traditional Italian dish typically consisting of a flat base of leavened wheat-based dough topped with tomato, cheese, and other ingredients, baked at a high temperature, traditionally in a wood-fired oven." data-price="P120.00">
+                <img src="../../images/pizza.png" alt="Pizza">
+                <div class="menu-item-details">
+                    <h3>Pizza</h3>
+                    <p>Pizza is a traditional Italian dish typically consisting of a flat base of leavened wheat-based dough topped with tomato, cheese, and other ingredients, baked at a high temperature, traditionally in a wood-fired oven.</p>
+                    <p class="price">P120.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+            <div class="menu-item" data-name="Burger & Fries" data-description="Burger and Fries with gooey, melty cheese on a double burger with browned and crusty bits, plus fresh, crunchy toppings and a soft, steamy bun served alongside golden fries." data-price="P120.00">
+                <img src="../../images/burger.png" alt="Burger & Fries">
+                <div class="menu-item-details">
+                    <h3>Burger & Fries</h3>
+                    <p>Burger and Fries with gooey, melty cheese on a double burger with browned and crusty bits, plus fresh, crunchy toppings and a soft, steamy bun served alongside golden fries.</p>
+                    <p class="price">P120.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+            <div class="menu-item" data-name="American Breakfast" data-description="American Breakfast consists of large portion of eggs, breakfast meats such as bacon or sausage, potatoes or hashbrowns, pancakes or waffles, toast, and coffee." data-price="P120.00">
+                <img src="../../images/breakfast.png" alt="American Breakfast">
+                <div class="menu-item-details">
+                    <h3>American Breakfast</h3>
+                    <p>American Breakfast consists of large portion of eggs, breakfast meats such as bacon or sausage, potatoes or hashbrowns, pancakes or waffles, toast, and coffee.</p>
+                    <p class="price">P120.00</p>
+                    <button class="buy-button">Buy</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 | soulabel Café</p>
+    </footer>
+
+      <!-- Info Box (for menu item) 
+    <div class="info-box">
+        <div class="info-content">
+            <span class="close">&times;</span>
+            <h3 class="info-title"></h3>
+            <p class="info-description"></p>
+            <div class="options">
+                <label for="sugar">Sugar Level:</label>
+                <select id="sugar">
+                    <option value="regular">Full Sugar - 100%</option>
+                    <option value="less">Less Sugar - 75%</option>
+                    <option value="half">Half Sugar - 50%</option>
+                    <option value="quarter">Quarter Sugar - 25%</option>
+                    <option value="none">No Sugar - 0%</option>
+                </select><br><br>
+                <input type="checkbox" id="milk" name="milk">
+                <label for="milk"> +Milk</label><br><br>
+                <input type="checkbox" id="ice" name="ice">
+                <label for="ice"> +Ice</label><br><br>
+                <input type="checkbox" id="coffee" name="coffee">
+                <label for="coffee"> +Coffee</label><br><br>
+                <input type="text" id="addons" name="addons" placeholder="Add-ons"><br><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+-->
+
+<!-- Info Box (for menu item) -->
+<div class="info-box">
+    <div class="info-content">
+        <span class="close">&times;</span>
+        <h3 class="info-title"></h3>
+        <img class="info-image" src="" alt="Image Description"> <!-- Updated: Added img tag with class "info-image" -->
+        <p class="info-description"></p>
+        <div class="options">
+            <label for="sugar">Drinks:</label>
+            <select id="sugar">
+                <option value="regular">Coca Cola</option>
+                <option value="less">Sprite</option>
+                <option value="half">Royal</option>
+                <option value="quarter">Coffee</option>
+                <option value="none">Water</option>
+            </select><br><br>
+            <div class="options">
+                <label for="sugar">Side Dishes:</label>
+                <select id="sugar">
+                    <option value="soup">Soup</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="fries">Fries</option>
+                </select><br><br>
+            <input type="checkbox" id="rice" name="rice">
+            <label for="rice"> +Rice</label><br><br>
+            <input type="checkbox" id="sauce" name="sauce">
+            <label for="sauce"> +Sauce</label><br><br>
+            <input type="text" id="addons" name="addons" placeholder="Add-ons"><br><br>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Content Box (hidden by default) no animations
+<div id="cart-content" class="info-box" style="display: none;">
+    <div class="info-content">
+        <span class="close">&times;</span>
+        <h3 class="info-title">Cart</h3>
+        <ul class="cart-items">
+        </ul>
+        <button class="checkout-button">Checkout</button>
+    </div>
+</div>
+ -->
+
+ <!-- 
+ <div id="cart-content" class="cart-content" style="display: none;">
+    <div class="cart-info">
+        <h3 class="cart-title">Cart</h3>
+        <ul class="cart-items">
+            
+        </ul>
+        <button class="checkout-button">Checkout</button>
+    </div>
+</div>
+
+<div id="checkout-image-container" style="display: none;">
+    <img id="checkout-image" src="../../images/qrcode.jpg" alt="Checkout Image">
+    <div id="checkout-info">
+        <textarea id="address" placeholder="Enter Address"></textarea>
+        <textarea id="phone" placeholder="Enter Phone Number"></textarea>
+        <button id="submit-button">Submit Purchase</button>
+        <p id="error-message" style="display: none; color: red;">Please fill in both Address and Phone Number.</p>
+        <p id="purchase-message" style="display: none; color: green;">Purchased successfully!</p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkoutButton = document.querySelector('.checkout-button');
+        const checkoutImageContainer = document.getElementById('checkout-image-container');
+        const submitButton = document.getElementById('submit-button');
+        const addressInput = document.getElementById('address');
+        const phoneInput = document.getElementById('phone');
+        const errorMessage = document.getElementById('error-message');
+        const purchaseMessage = document.getElementById('purchase-message');
+        const closeButton = document.querySelector('.close'); // Select the close button
+
+        checkoutButton.addEventListener('click', function() {
+            // Display the image
+            checkoutImageContainer.style.display = 'block';
+        });
+
+        submitButton.addEventListener('click', function() {
+            // Check if both fields are filled
+            if (addressInput.value.trim() === '' || phoneInput.value.trim() === '') {
+                // Show error message within the text area
+                errorMessage.style.display = 'block';
+            } else {
+                // Hide error message
+                errorMessage.style.display = 'none';
+                // Show purchase message
+                purchaseMessage.style.display = 'block';
+            }
+        });
+
+        closeButton.addEventListener('click', function() {
+            // Hide the image when the close button is clicked
+            checkoutImageContainer.style.display = 'none';
+            // Hide messages
+            errorMessage.style.display = 'none';
+            purchaseMessage.style.display = 'none';
+        });
+    });
+</script>
+-->
+
+<div id="cart-content" class="cart-content" style="display: none;">
+    <div class="cart-info">
+        <h3 class="cart-title">Cart</h3>
+        <ul class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <button class="checkout-button">Checkout</button>
+    </div>
+</div>
+
+<div id="checkout-image-container" style="display: none;">
+    <img id="checkout-image" src="../../images/qrcode.jpg" alt="Checkout Image">
+    <div id="checkout-info">
+        <textarea id="address" placeholder="Enter Address"></textarea>
+        <textarea id="phone" placeholder="Enter Phone Number"></textarea>
+        <button id="submit-button">Submit Purchase</button>
+        <p id="error-message" style="display: none; color: red;">Please fill in both Address and Phone Number.</p>
+        <p id="purchase-message" style="display: none; color: green;">Purchased successfully!</p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkoutButton = document.querySelector('.checkout-button');
+        const checkoutImageContainer = document.getElementById('checkout-image-container');
+        const submitButton = document.getElementById('submit-button');
+        const addressInput = document.getElementById('address');
+        const phoneInput = document.getElementById('phone');
+        const errorMessage = document.getElementById('error-message');
+        const purchaseMessage = document.getElementById('purchase-message');
+        const closeButton = document.querySelector('.close'); // Select the close button
+
+        checkoutButton.addEventListener('click', function() {
+            // Display the image
+            checkoutImageContainer.style.display = 'block';
+        });
+
+        submitButton.addEventListener('click', function() {
+            // Check if both fields are filled
+            if (addressInput.value.trim() === '' || phoneInput.value.trim() === '') {
+                // Show error message within the text area
+                errorMessage.style.display = 'block';
+            } else {
+                // Hide error message
+                errorMessage.style.display = 'none';
+                // Show purchase message
+                purchaseMessage.style.display = 'block';
+            }
+        });
+
+        closeButton.addEventListener('click', function() {
+            // Hide the image when the close button is clicked
+            checkoutImageContainer.style.display = 'none';
+            // Hide messages
+            errorMessage.style.display = 'none';
+            purchaseMessage.style.display = 'none';
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+            const infoBox = document.querySelector('.info-box');
+            const closeButton = document.querySelector('.close');
+            const menuItems = document.querySelectorAll('.menu-item');
+            const cartButton = document.querySelector('.cart-button');
+            const cart = document.querySelector('.cart');
+            const closeCartButton = document.querySelector('.close-cart');
+
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    infoBox.querySelector('.info-title').innerText = item.getAttribute('data-name');
+                    infoBox.querySelector('.info-description').innerText = item.getAttribute('data-description');
+                    infoBox.querySelector('.info-image').src = item.querySelector('img').src;
+                    infoBox.classList.add('show');
+                    setTimeout(() => {
+                        infoBox.classList.add('zoom-out');
+                    }, 10);
+                });
+            });
+
+            closeButton.addEventListener('click', function() {
+                infoBox.classList.remove('show', 'zoom-out');
+            });
+
+            cartButton.addEventListener('click', function() {
+                cart.classList.add('show');
+            });
+
+            closeCartButton.addEventListener('click', function() {
+                cart.classList.remove('show');
+            });
+        });
+
+            //Zoom Effect
+            document.addEventListener('DOMContentLoaded', function() {
+  
+  document.body.classList.add('zoom-effect');
+
+  setTimeout(function() {
+     document.body.classList.remove('zoom-effect');
+ }, 500); 
+});
+    </script>
+
+
+
+    <script src="menu2.js"></script>
+</div>
+</body>
+</html>
